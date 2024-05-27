@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="114.0" prefWidth="174.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="triangulopascaldiscretas.trianglepascalapp.controller.BienvenidaOperationsUQ">
+   <children>
+      <VBox layoutX="6.0" prefHeight="135.0" prefWidth="280.0" spacing="10.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="147.0" text="Que quieres hacer?">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <Button fx:id="btnCombinatorias" mnemonicParsing="false" onAction="#onCombinatorias" text="Combinatorias, Variaciones y Permutaciones">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnTrianguloPascal" mnemonicParsing="false" onAction="#onTrianguloPascal" text="Triangulo de Pascal">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnBinomioNewton" mnemonicParsing="false" onAction="#onBinomioNewton" text="Binomio de Newton">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

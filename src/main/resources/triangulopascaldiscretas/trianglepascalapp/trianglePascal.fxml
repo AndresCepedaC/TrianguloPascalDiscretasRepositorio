@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane prefHeight="495.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="triangulopascaldiscretas.trianglepascalapp.controller.TrianglePascalController">
+   <children>
+      <TableView fx:id="tblResult" layoutX="4.0" layoutY="144.0" prefHeight="318.0" prefWidth="654.0">
+         <columns>
+            <TableColumn fx:id="expressionColumn" prefWidth="653.0" text="Expresión">
+               <cellValueFactory>
+                  <PropertyValueFactory property="expression" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Button fx:id="btnCalcular" layoutX="306.0" layoutY="69.0" mnemonicParsing="false" onAction="#onCalcular" text="Calcular">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <TextField fx:id="txtCoeficiente" layoutX="260.0" layoutY="32.0" promptText="Ingrese el coeficiente">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <Label layoutX="147.0" layoutY="2.0" text="Aplicación para calcular coeficientes del triángulo de Pascal">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSelectedExpression" editable="false" layoutX="4.0" layoutY="108.0" prefHeight="25.0" prefWidth="654.0" promptText="Expresión seleccionada">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></TextField>
+      <Button layoutX="273.0" layoutY="465.0" mnemonicParsing="false" onAction="#onAbrirPagina" text="Verlo de otra manera">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
